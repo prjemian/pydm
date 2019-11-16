@@ -13,7 +13,7 @@ from .drawing import (PyDMDrawingLine, PyDMDrawingRectangle,
                       PyDMDrawingTriangle,
                       PyDMDrawingEllipse, PyDMDrawingCircle, PyDMDrawingArc,
                       PyDMDrawingPie, PyDMDrawingChord, PyDMDrawingImage,
-                      PyDMDrawingPolygon)
+                      PyDMDrawingPolygon, PyDMDrawingPolyline)
 
 from .embedded_display import PyDMEmbeddedDisplay
 from .enum_button import PyDMEnumButton
@@ -100,6 +100,10 @@ PyDMDrawingTrianglePlugin = qtplugin_factory(PyDMDrawingTriangle,
                                              extensions=BASE_EXTENSIONS)
 
 PyDMDrawingPolygonPlugin = qtplugin_factory(PyDMDrawingPolygon,
+                                            group=WidgetCategory.DRAWING,
+                                            extensions=BASE_EXTENSIONS)
+
+PyDMDrawingPolylinePlugin = qtplugin_factory(PyDMDrawingPolyline,
                                             group=WidgetCategory.DRAWING,
                                             extensions=BASE_EXTENSIONS)
 
