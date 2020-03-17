@@ -34,3 +34,6 @@ PyDMDrawing Widgets
 
 .. autoclass:: pydm.widgets.drawing.PyDMDrawingPolygon
    :members:
+
+.. autoclass:: pydm.widgets.drawing.PyDMDrawingPolyline
+   :members:
